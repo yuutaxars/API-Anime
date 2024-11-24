@@ -1,0 +1,109 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+    color: #333; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Cabecera */
+  header {
+    background-color: #747474; 
+    color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgb(255, 3, 3); 
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Contenedor principal */
+  main {
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px; /* Espaciado entre input y botón */
+  }
+  
+  form input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #f30000;
+    border-radius: 5px;
+    width: 300px; /* Ancho fijo */
+  }
+  
+  form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #00d400a2; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animación al pasar el cursor */
+  }
+  
+  form button:hover {
+    background-color: #a10808c2; 
+  }
+  
+  /* Contenedor de tarjetas de anime */
+  .anime-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Diseño responsivo */
+    gap: 20px; /* Espaciado entre tarjetas */
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  /* Estilo de las tarjetas */
+  .card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(255, 0, 0); /* Sombra para profundidad */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s; /* Animación al pasar el cursor */
+  }
+  
+  .card:hover {
+    transform: scale(1.05); /* Agrandar ligeramente */
+    box-shadow: 0 6px 12px rgb(25, 255, 4); 
+  }
+  
+  .card img {
+    width: 100px;
+    height: 150px;
+    object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin: 10px 0 5px;
+    font-size: 18px;
+  }
+  
+  .card p {
+    margin: 5px 0;
+    color: #ca0e0e; 
+    font-size: 14px;
+  }
+  
